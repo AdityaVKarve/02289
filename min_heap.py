@@ -6,6 +6,7 @@ I'm solving this question here using a max-heap
 
 ALGORITHM:
 We make use of a min-heap to get the n smallest elements of an array.
+This solution works perfectly fine for streaming models too. Stream can be continuously added to the heap, and we can simply poll the k elements.
 
 How a min-heap works:
 1. Define a list min_heap
