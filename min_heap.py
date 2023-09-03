@@ -30,13 +30,13 @@ class MinHeap():
     def get_left_child(self,index):
         #Return left child of the given index
         try:
-            return self.min_heap[self.get_left_child_index]
+            return self.min_heap[self.get_left_child_index(index)]
         except:
             return None
     
     def has_left_child(self,index):
         #Check if there is a left child
-        return self.get_left_child_index < len(self.min_heap) - 1
+        return self.get_left_child_index(index) < len(self.min_heap) - 1
     
     def get_left_child_index(self, index):
         #Get the index of the left child
@@ -45,13 +45,13 @@ class MinHeap():
     def get_right_child(self,index):
         #Return right child of the given index
         try:
-            return self.min_heap[self.get_right_child_index]
+            return self.min_heap[self.get_right_child_index(index)]
         except:
             return None
     
     def has_right_child(self,index):
         #Check if there is a right child
-        return self.get_right_child_index < len(self.min_heap) - 1
+        return self.get_right_child_index(index) < len(self.min_heap) - 1
     
     def get_right_child_index(self, index):
         #Get index of the right child
